@@ -10,6 +10,6 @@
 
 # Challenge
 
-I managed to reach level 15. If you can beat t**his contact me to get a reward!**
+I managed to reach level 15. If you can beat this contact me to get a reward!
 
 **Thanks for playing!**
