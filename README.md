@@ -1,4 +1,4 @@
-# How to Play 
+# How to Play
 
 - First of all you need to press any key from your keyboard to start the game
 - When a key is pressed one of the four blocks will flash
@@ -11,5 +11,6 @@
 # Challenge
 
 I managed to reach level 15. If you can beat this contact me to get a reward!
+Try the game at: [simon-game](https://alextsagkas.github.io/Simon-Game/)
 
 **Thanks for playing!**
