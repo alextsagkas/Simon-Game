@@ -11,6 +11,5 @@
 # Challenge
 
 I managed to reach level 15. If you can beat this contact me to get a reward!
-Try the game at: [simon-game](https://alextsagkas.github.io/Simon-Game/)
 
 **Thanks for playing!**
