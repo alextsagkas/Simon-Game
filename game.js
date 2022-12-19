@@ -4,7 +4,7 @@ var userClickedPattern = [];
 var level = 0;
 var clicks = 0;
 
-$(document).on("keydown", keyHandler);
+$(".start-button").click(keyHandler);
 $(".btn").click(clickHandler);
 
 function keyHandler(event) {
@@ -12,6 +12,7 @@ function keyHandler(event) {
 
   if (level === 0) {
     nextSequence();
+    $(".start-button").text("Start");
   }
 }
 
@@ -22,6 +23,9 @@ function nextSequence() {
   level++;
   userClickedPattern = [];
 
+  if (level > 0) {
+    $(".start-button").addClass("hidden");
+  }
   $("h1").text(`Level ${level}`);
 
   const randomNumber = Math.floor(Math.random() * 4);
@@ -37,7 +41,7 @@ function clickHandler(event) {
   clicks++;
 
   if (level === 0) {
-    $("h1").text("Press A Key to Start!!!");
+    $("h1").text("Press the Start Button to Start!!!");
     return;
   }
 
@@ -73,9 +77,10 @@ function checkAnswer(currentLevel) {
       answer = false;
 
       $("h1").text("You Lost!");
-      $("h1").after("<h2 class='h1'>Press any key to restart</h2>");
+      $(".start-button").removeClass("hidden");
+      $(".start-button").text("Restart");
+      $("h1").after("<h2 class='h1'>Press the Restart Button to Restart</h2>");
       $("body").addClass("game-over");
-
       playSound("wrong");
       setTimeout(() => {
         $("body").removeClass("game-over");
