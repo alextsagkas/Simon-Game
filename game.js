@@ -79,7 +79,7 @@ function checkAnswer(currentLevel) {
       $("h1").text("You Lost!");
       $(".start-button").removeClass("hidden");
       $(".start-button").text("Restart");
-      $("h1").after("<h2 class='h1'>Press the Restart Button to Restart</h2>");
+      $("h1").after("<h2 class='h1'>Press the Button to Restart</h2>");
       $("body").addClass("game-over");
       playSound("wrong");
       setTimeout(() => {
