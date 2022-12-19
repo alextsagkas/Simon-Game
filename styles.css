@@ -57,3 +57,17 @@ h2 {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+
+.invisible-form {
+  /* background-color: #011f3f; */
+  background-color: red;
+  border-width: 0;
+}
+
+.invisible-form:focus {
+  outline: none;
+}
+
+.invisible-form:hover {
+  cursor: default;
+}
